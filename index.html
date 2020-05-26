@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Drawer</title>
+    <link rel="stylesheet" href="css//style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__heading">
+        Drawer
+      </h1>
+      <ul class="header__tools">
+        <li class="tool">
+          <label class="tool__label" for="pencil-color">Pencil color</label>
+          <input
+            class="tool__input"
+            type="color"
+            name="pencil-color"
+            id="pencil-color"
+          />
+        </li>
+        <li class="tool">
+          <label class="tool__label" for="background-color"
+            >Background color</label
+          >
+          <input
+            class="tool__input"
+            type="color"
+            name="backgound-color"
+            id="background-color"
+            value="#ffffff"
+          />
+        </li>
+        <li class="tool">
+          <label class="tool__label" for="pencil-size">Pencil size</label>
+          <input
+            class="tool__input"
+            type="number"
+            name="pencil-size"
+            id="pencil-size"
+            value="3"
+            step="1"
+          />
+        </li>
+        <li class="tool">
+          <button class="tool__button" data-clear-btn>Clear</button>
+          <button class="tool__button" data-save-btn>Save</button>
+        </li>
+      </ul>
+    </header>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
